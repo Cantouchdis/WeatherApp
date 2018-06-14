@@ -46,7 +46,7 @@ public class CityFragment extends Fragment {
             } else if (mWeatherItem.getCityName().equals("LONDON")){
                 mWeatherItem.setCityId("2643743");
             } else {
-                mWeatherItem.setCityId("2921044");
+                mWeatherItem.setCityId("6454095");
             }
         }
 
