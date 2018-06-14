@@ -5,4 +5,5 @@
     <string name="second_city">LONDON</string>
     <string name="third_city">GERMANY</string>
     <string name="weather_logo_desc">weather_logo</string>
+    <string name="title_activity_city">CityActivity</string>
 </resources>
