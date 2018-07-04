@@ -3,7 +3,8 @@
     <string name="choose_a_city">Choose a city</string>
     <string name="first_city">PRISHTINA</string>
     <string name="second_city">LONDON</string>
-    <string name="third_city">GERMANY</string>
+    <string name="third_city">VIENNE</string>
     <string name="weather_logo_desc">weather_logo</string>
     <string name="title_activity_city">CityActivity</string>
+    <string name="title_activity_week">WeekActivity</string>
 </resources>

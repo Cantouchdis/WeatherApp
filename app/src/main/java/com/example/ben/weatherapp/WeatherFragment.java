@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.example.ben.weatherapp.model.WeatherItem;
 
+import org.w3c.dom.Text;
+
 import java.io.IOException;
 
 public class WeatherFragment extends Fragment {

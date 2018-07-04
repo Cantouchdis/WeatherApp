@@ -1,13 +1,10 @@
 package com.example.ben.weatherapp;
-
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +21,6 @@ public class CityFragment extends Fragment {
     private ImageView mImageView;
     private TextView mFirstInfo;
     private TextView mSecondInfo;
-    private TextView mUpcomingForecast;
     private TextView mWeatherTemp;
 
     public static CityFragment newInstance(){
@@ -46,7 +42,7 @@ public class CityFragment extends Fragment {
             } else if (mWeatherItem.getCityName().equals("LONDON")){
                 mWeatherItem.setCityId("2643743");
             } else {
-                mWeatherItem.setCityId("2921044");
+                mWeatherItem.setCityId("6454095");
             }
         }
 
@@ -66,14 +62,8 @@ public class CityFragment extends Fragment {
         mFirstInfo=v.findViewById(R.id.first_info);
         mImageView=v.findViewById(R.id.weather_image);
         mSecondInfo=v.findViewById(R.id.second_info);
-        mUpcomingForecast=v.findViewById(R.id.upcoming_forcast);
 
         mCityText.setText(mWeatherItem.getCityName());
-
-
-
-
-
 
         return v;
     }
@@ -92,7 +82,7 @@ public class CityFragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
 
-            mWeatherTemp.setText(""+mWeatherItem.getTemp());
+            mWeatherTemp.setText(""+mWeatherItem.getTemp()+"°C");
             mFirstInfo.setText(""+mWeatherItem.getWind());
             mSecondInfo.setText(""+mWeatherItem.getVisibility());
             mImageView.setImageBitmap(mWeatherItem.getBitmap());
